@@ -8,7 +8,9 @@ import { MaincardComponent } from './maincard/maincard.component';
 import { AddProductComponent } from './products/add-product/add-product.component';
 import { ListProductComponent } from './products/list-product/list-product.component';
 import { SearchProductComponent } from './products/search-product/search-product.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UpdateProductComponent } from './products/update-product/update-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +19,14 @@ import { SearchProductComponent } from './products/search-product/search-product
     MaincardComponent,
     AddProductComponent,
     ListProductComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
