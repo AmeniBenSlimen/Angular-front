@@ -8,7 +8,7 @@ import { Product } from '../product';
 })
 export class ProductService {
   private BasicUrl ='http://localhost:8083/shop/products';
-
+//HttpClient : houa l bch yaaml l communication bin l front w back
   constructor(private http:HttpClient) { }
 
   public getAll(){

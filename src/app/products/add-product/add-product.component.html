@@ -24,6 +24,12 @@
       <label for="description">Description:</label>
       <input type="text" class="form-control" [(ngModel)]="produit.description" [ngModelOptions]="{standalone: true}" placeholder="Description Produit" id="description">
     </div>
+    <div class="form-group">
+      <label for="description">Marque:</label>
+      <select class="form-control" [(ngModel)]="produit.marqueId" [ngModelOptions]="{standalone: true}" id="description">
+        <option *ngFor ="let m of marque" value="{{m.id}}">{{m.nom}}</option>
+        </select>
+    </div>
     
     <button type="submit" (click) =" create()"class="btn btn-primary">Submit</button>
   </form>

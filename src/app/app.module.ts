@@ -11,6 +11,8 @@ import { SearchProductComponent } from './products/search-product/search-product
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UpdateProductComponent } from './products/update-product/update-product.component';
+import { CreateMarqueComponent } from './views/marque/create-marque/create-marque.component';
+import { ListeMarqueComponent } from './views/marque/liste-marque/liste-marque.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { UpdateProductComponent } from './products/update-product/update-product
     AddProductComponent,
     ListProductComponent,
     SearchProductComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    CreateMarqueComponent,
+    ListeMarqueComponent
   ],
   imports: [
     BrowserModule,

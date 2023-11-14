@@ -6,4 +6,5 @@ export class Product {
     qte?:number;
     couleur?:string;
     description?:string;
+    marqueId?:number;
 }
